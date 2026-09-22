@@ -7,16 +7,16 @@ authors = [
     { name = "mhy", email = "2289422595@qq.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
-
-[project.scripts]
-projects = "projects:main"
-
-[build-system]
-requires = ["uv_build>=0.12.16,<0.13.0"]
-build-backend = "uv_build"
+dependencies = [
+    "fastapi>=0.141.1",
+    "pydantic>=2.13.5",
+    "uvicorn>=0.53.0",
+]
 
 [dependency-groups]
 dev = [
     "ipykernel>=7.3.0",
 ]
+
+[tool.uv]
+package = false
