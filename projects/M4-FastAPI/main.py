@@ -1,5 +1,7 @@
 from fastapi import FastAPI, HTTPException, status
 from pydantic import BaseModel
+import asyncio
+import time
 
 app = FastAPI(title="Device Management API V1")
 
@@ -63,7 +65,7 @@ def get_devices(location: str | None = None, device_type: str | None = None):
 @app.get("/devices/{device_id}", response_model=DeviceResponse)
 def get_device(device_id: int):
     if device_id not in devices_db:
-        # 提前预告 Day 6 的异常处理
+      # 提前预告 Day 6 的异常处理
         raise HTTPException(status_code=404, detail="Device not found")
     return devices_db[device_id]
 
@@ -104,3 +106,34 @@ def get_device_status(device_id: int):
         "last_seen": "2026-09-22T10:00:00Z"  # 模拟真实时间
     }
 
+
+@app.get("/devices/{device_id}/sync-status")
+async def get_device_status_async(device_id: int):
+    if device_id not in devices_db:
+        raise HTTPException(status_code=404, detail="Device not found")
+    
+    # 模拟调用外部 API 需要 2 秒
+    # 注意：这里用 asyncio.sleep，不能用 time.sleep
+    await asyncio.sleep(5)  
+    #time.sleep(7)  
+    
+    return {
+        "id": device_id,
+        "status": "online",
+        "checked_at": "2026-09-22T10:00:00Z"
+    }
+
+@app.get("/devices/{device_id}/sync-status")
+def get_device_status_async(device_id: int):
+    if device_id not in devices_db:
+        raise HTTPException(status_code=404, detail="Device not found")
+    
+    # 模拟调用外部 API 需要 2 秒
+    # 注意：这里用 asyncio.sleep，不能用 time.sleep
+    time.sleep(7)  
+    
+    return {
+        "id": device_id,
+        "status": "online",
+        "checked_at": "2026-09-22T10:00:00Z"
+    }
