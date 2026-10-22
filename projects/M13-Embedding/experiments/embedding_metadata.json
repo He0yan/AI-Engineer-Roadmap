@@ -1,0 +1,8 @@
+{
+  "model_name": "BAAI/bge-m3",
+  "record_count": 25,
+  "embedding_dimension": 1024,
+  "embedding_dtype": "float32",
+  "client_normalization_applied": false,
+  "generated_at_utc": "2026-10-15T04:05:04.991578+00:00"
+}

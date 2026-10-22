@@ -28,6 +28,23 @@ def explain_fault(fault_description: str) -> str:
         ),
         temperature=0.2
     )
+    
+    # 1. 遍历 output 数组，查找推理内容
+    reasoning_text = ""
+    for item in response.output:
+        if item.type == "reasoning":
+            # 推理内容通常在 summary 字段里
+            # 注意：具体字段名可能因模型/平台而异，可能是 item.summary 或 item.text
+            # 根据搜索结果，通常是 summary[].text
+            if hasattr(item, 'summary') and item.summary:
+                reasoning_text = "".join(part.text for part in item.summary if hasattr(part, 'text'))
+            elif hasattr(item, 'text'):
+                reasoning_text = item.text
+            break # 找到第一个推理块就退出
+
+    if reasoning_text:
+        print("\n=== 模型思考过程 ===")
+        print(reasoning_text)
 
     if response.usage:
         print("输入 Token：", response.usage.input_tokens)

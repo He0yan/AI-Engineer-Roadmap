@@ -1,0 +1,183 @@
+[
+  {
+    "id": "q001",
+    "question": "用人单位与劳动者订立劳动合同，应该遵循哪些原则？",
+    "type": "基础条文",
+    "expected_sources": [
+      {
+        "document_title": "中华人民共和国劳动合同法",
+        "article_number": "第三条",
+        "source_url": "",
+        "verification_date": "待核验",
+        "local_file": "data/raw/中华人民共和国劳动合同法.docx"
+      }
+    ],
+    "expected_keywords": ["合法", "公平", "平等自愿", "协商一致", "诚实信用"],
+    "status": "待核验"
+  },
+  {
+    "id": "q002",
+    "question": "建立劳动关系后，最晚应在什么时间内订立书面劳动合同？",
+    "type": "基础条文",
+    "expected_sources": [
+      {
+        "document_title": "中华人民共和国劳动合同法",
+        "article_number": "第十条",
+        "source_url": "",
+        "verification_date": "待核验",
+        "local_file": "data/raw/中华人民共和国劳动合同法.docx"
+      }
+    ],
+    "expected_keywords": ["用工之日起一个月内", "书面劳动合同"],
+    "status": "待核验"
+  },
+  {
+    "id": "q003",
+    "question": "劳动合同试用期最长可以约定多久？",
+    "type": "基础条文",
+    "expected_sources": [
+      {
+        "document_title": "中华人民共和国劳动合同法",
+        "article_number": "第十九条",
+        "source_url": "",
+        "verification_date": "待核验",
+        "local_file": "data/raw/中华人民共和国劳动合同法.docx"
+      }
+    ],
+    "expected_keywords": ["试用期", "最长", "六个月"],
+    "status": "待核验"
+  },
+  {
+    "id": "q004",
+    "question": "劳动者在试用期的工资最低标准是什么？",
+    "type": "跨条文",
+    "expected_sources": [
+      {
+        "document_title": "中华人民共和国劳动合同法",
+        "article_number": "第二十条",
+        "source_url": "",
+        "verification_date": "待核验",
+        "local_file": "data/raw/中华人民共和国劳动合同法.docx"
+      },
+      {
+        "document_title": "中华人民共和国劳动合同法实施条例",
+        "article_number": "第十五条",
+        "source_url": "",
+        "verification_date": "待核验",
+        "local_file": "data/raw/中华人民共和国劳动合同法实施条例.docx"
+      }
+    ],
+    "expected_keywords": ["试用期工资", "不得低于", "百分之八十", "最低工资标准"],
+    "status": "待核验"
+  },
+  {
+    "id": "q005",
+    "question": "劳动者提前解除劳动合同，需要提前多久通知用人单位？",
+    "type": "基础条文",
+    "expected_sources": [
+      {
+        "document_title": "中华人民共和国劳动合同法",
+        "article_number": "第三十七条",
+        "source_url": "",
+        "verification_date": "待核验",
+        "local_file": "data/raw/中华人民共和国劳动合同法.docx"
+      }
+    ],
+    "expected_keywords": ["提前三十日", "书面通知", "试用期", "三日"],
+    "status": "待核验"
+  },
+  {
+    "id": "q006",
+    "question": "用人单位未依法订立书面劳动合同，可能承担什么后果？",
+    "type": "跨条文",
+    "expected_sources": [
+      {
+        "document_title": "中华人民共和国劳动合同法",
+        "article_number": "第八十二条",
+        "source_url": "",
+        "verification_date": "待核验",
+        "local_file": "data/raw/中华人民共和国劳动合同法.docx"
+      },
+      {
+        "document_title": "中华人民共和国劳动合同法实施条例",
+        "article_number": "第六条",
+        "source_url": "",
+        "verification_date": "待核验",
+        "local_file": "data/raw/中华人民共和国劳动合同法实施条例.docx"
+      },
+      {
+        "document_title": "中华人民共和国劳动合同法实施条例",
+        "article_number": "第七条",
+        "source_url": "",
+        "verification_date": "待核验",
+        "local_file": "data/raw/中华人民共和国劳动合同法实施条例.docx"
+      }
+    ],
+    "expected_keywords": ["双倍工资", "补订书面劳动合同", "终止劳动关系", "经济补偿", "无固定期限劳动合同"],
+    "status": "待核验"
+  },
+  {
+    "id": "q007",
+    "question": "国家规定的标准工作时间是多少？",
+    "type": "基础条文",
+    "expected_sources": [
+      {
+        "document_title": "中华人民共和国劳动法",
+        "article_number": "第三十六条",
+        "source_url": "",
+        "verification_date": "待核验",
+        "local_file": "data/raw/中华人民共和国劳动法.docx"
+      }
+    ],
+    "expected_keywords": ["每日工作时间不超过八小时", "平均每周工作时间不超过四十四小时"],
+    "status": "待核验"
+  },
+  {
+    "id": "q008",
+    "question": "安排劳动者加班，加班工资应按什么标准支付？",
+    "type": "基础条文",
+    "expected_sources": [
+      {
+        "document_title": "中华人民共和国劳动法",
+        "article_number": "第四十四条",
+        "source_url": "",
+        "verification_date": "待核验",
+        "local_file": "data/raw/中华人民共和国劳动法.docx"
+      }
+    ],
+    "expected_keywords": ["延长工作时间", "百分之一百五十", "百分之二百", "百分之三百"],
+    "status": "待核验"
+  },
+  {
+    "id": "q009",
+    "question": "解除或终止劳动合同的经济补偿按什么标准计算？",
+    "type": "基础条文",
+    "expected_sources": [
+      {
+        "document_title": "中华人民共和国劳动合同法",
+        "article_number": "第四十七条",
+        "source_url": "",
+        "verification_date": "待核验",
+        "local_file": "data/raw/中华人民共和国劳动合同法.docx"
+      }
+    ],
+    "expected_keywords": ["经济补偿", "每满一年", "一个月工资", "六个月以上不满一年", "不满六个月"],
+    "status": "待核验"
+  },
+  {
+    "id": "q010",
+    "question": "用人单位应当自用工之日起多久内为职工办理社会保险登记？",
+    "type": "基础条文",
+    "expected_sources": [
+      {
+        "document_title": "中华人民共和国社会保险法",
+        "article_number": "第五十八条",
+        "source_url": "",
+        "verification_date": "待核验",
+        "local_file": "data/raw/中华人民共和国社会保险法.docx"
+      }
+    ],
+    "expected_keywords": ["用工之日起三十日内", "社会保险经办机构", "申请办理社会保险登记"],
+    "status": "待核验"
+  }
+]
