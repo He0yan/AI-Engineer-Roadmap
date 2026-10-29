@@ -44,3 +44,7 @@ def embed_texts(texts: list, batch_size: int = 32) -> list:
         all_vectors.extend(vectors)
 
     return all_vectors
+
+
+vectors=embed_texts(["公司与员工签订两年固定期限劳动合同,可以约定多长试用期,哪些合同不能约定试用期"])
+print(f"M14中qvector长度{len(vectors[0])}\n{vectors[0][0:10]}")

@@ -92,7 +92,7 @@ def answer(question: str, top_k: int = DEFAULT_TOP_K) -> dict:
 
 
 if __name__ == "__main__":
-    q = "用人单位与劳动者订立劳动合同，应该遵循哪些原则？"
+    q = "北京地区社保缴费比例是多少？"
     result = answer(q)
     print(f"状态: {result['status']}")
     print(result["answer"])

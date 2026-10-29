@@ -85,7 +85,7 @@ def query(question: str, top_k: int = 5):
     client = get_client()
     collection = get_collection(client)
     q_vector = embed_texts([question])[0]
-    #print(f"q_vector为:{q_vector}")
+    #print(f"M14中q_vector长度为:{len(q_vector)}\n{q_vector[0:10]}")
 
     results = collection.query(
         query_embeddings=[q_vector],

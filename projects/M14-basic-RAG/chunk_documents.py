@@ -18,32 +18,10 @@ RE_ENDS_WITH_PUNCT = re.compile(r"[。；;！？：:”’）」』】]$")
 
 MAX_CHARS = 500
 
-DOC_META = {
-    "中华人民共和国劳动合同法": {
-        "document_title": "中华人民共和国劳动合同法",
-        "source_url": "",
-        "version": "待核验",
-        "verification_date": "待核验",
-    },
-    "中华人民共和国劳动合同法实施条例": {
-        "document_title": "中华人民共和国劳动合同法实施条例",
-        "source_url": "",
-        "version": "待核验",
-        "verification_date": "待核验",
-    },
-    "中华人民共和国劳动法": {
-        "document_title": "中华人民共和国劳动法",
-        "source_url": "",
-        "version": "待核验",
-        "verification_date": "待核验",
-    },
-    "中华人民共和国社会保险法": {
-        "document_title": "中华人民共和国社会保险法",
-        "source_url": "",
-        "version": "待核验",
-        "verification_date": "待核验",
-    },
-}
+with open('metadata.json','r',encoding='utf-8') as f:
+    metadata=json.load(f)
+
+DOC_META =metadata
 
 CN_MAP = {c: i for i, c in enumerate("零一二三四五六七八九", start=0)}
 CN_MAP.update({"两": 2, "〇": 0})
